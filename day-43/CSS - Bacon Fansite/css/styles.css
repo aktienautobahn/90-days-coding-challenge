@@ -1,0 +1,34 @@
+/****************************TAG SELECTORS****************************/
+
+body {
+    background-color: blanchedalmond;
+    color: darkgreen;
+}
+
+h1 {
+    color: green;
+    font-size: 100px;
+}
+
+img:hover {
+    background-color:gold;
+
+}
+
+/****************************CLASS SELECTORS****************************/
+
+.broccoli {
+
+    background-color: chartreuse;
+}
+
+.carrot {
+
+    background-color: salmon;
+    
+}
+
+
+.circular {
+    border-radius: 100%;
+}

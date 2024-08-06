@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "",
+		"name": "Cafe API ",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests a user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": ""
+	},
+	"item": [
+		{
+			"name": "localhost:5000/all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5000/all",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"all"
+					]
+				},
+				"description": "Get All Cafes"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/random",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5000/random",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"random"
+					]
+				},
+				"description": "Get Random Cafe"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/search?loc=Peckham",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5000/search?loc=Peckham",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "loc",
+							"value": "Peckham"
+						}
+					]
+				},
+				"description": "Search Cafes By Location"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/add?api-key=TopSecretAPIKey",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5000/add?api-key=TopSecretAPIKey",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"add"
+					],
+					"query": [
+						{
+							"key": "api-key",
+							"value": "TopSecretAPIKey"
+						}
+					]
+				},
+				"description": "Post New Cafe"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/update-price/3?new_price=€2.00",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5000/update-price/3?new_price=€2.00",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"update-price",
+						"3"
+					],
+					"query": [
+						{
+							"key": "new_price",
+							"value": "€2.00"
+						}
+					]
+				},
+				"description": "Update Coffee Price for Cafe"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/report-closed/123?api-key=TopSecretAPIKey",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5000/report-closed/123?api-key=TopSecretAPIKey",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"report-closed",
+						"123"
+					],
+					"query": [
+						{
+							"key": "api-key",
+							"value": "TopSecretAPIKey"
+						}
+					]
+				},
+				"description": "Delete a Cafe By Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Cafes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/all",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Random Cafe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/random",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"random"
+					]
+				},
+				"description": "returns random cafe"
+			},
+			"response": []
+		}
+	]
+}

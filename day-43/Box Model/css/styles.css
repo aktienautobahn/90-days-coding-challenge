@@ -1,0 +1,26 @@
+.skyblue {
+    background-color: skyblue;
+    height: 200px;
+    width: 200px;
+    border: solid 10px;
+    border-color: black;
+    padding: 20px;
+}
+
+.red {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    border-color: black;
+    border: solid 20px;
+    margin-left: 260px;
+}
+
+.yellow {
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    border: solid 10px;
+    border-color: black;
+    margin-left: 500px;
+}

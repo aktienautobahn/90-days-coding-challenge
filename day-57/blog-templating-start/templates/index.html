@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="top">
+        <div class="title"><h1>{{ 'My Business News on ' +  topic }}</h1></div>
+    </div>
+
+    <div class="content">
+        {% for article in articles: %}
+        <div class="card">
+            <h2>{{ article.title }}</h2>
+            <p class="text">{{ article.description }}</p>
+            <a href="{{ url_for('get_blog', id = article.id) }}">Read</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+<footer>
+    <p>Made with ♥️ in Stuttgart.</p>
+</footer>
+</html>

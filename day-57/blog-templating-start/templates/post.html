@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="top">
+        <div class="title"><h1>{{ article.title }}</h1></div>
+           </div>
+        <div class="content">
+
+            <div class="card">
+                <h2></h2>
+
+                {% if article.author != None %}
+                    <p>{{ article.author }}</p>
+                {% endif %}
+                <p>{{ article.content }}</p>
+
+                
+                <a href='{{ article.url }}'>Open source</p>
+
+                <img src='{{article.urlToImage}}' alt="No image">
+
+                <p>{{ article.publishedAt }}</p>
+
+            </div>
+
+    </div>
+</div>
+</body>
+<footer>
+    <p>Made with ♥️ in Stuttgart.</p>
+</footer>
+</html>

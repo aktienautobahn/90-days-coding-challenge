@@ -1,0 +1,60 @@
+{% extends 'bootstrap/base.html' %}
+
+
+{% block styles %}
+{{ super() }}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock %}
+
+{% block title %}Restaurants{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <h1>All Cafes</h1>
+      <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Map URL</th>
+                <th>Image URL</th>
+                <th>Location</th>
+                <th>Has Sockets?</th>
+                <th>Has Toilet?</th>
+                <th>Has WiFi?</th>
+                <th>Can Take Calls?</th>
+                <th>Seats</th>
+                <th>Coffee Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cafe in cafes %}
+                <tr>
+                    <td>{{ cafe.id }}</td>
+                    <td>{{ cafe.name }}</td>
+                    <td><a href="{{ cafe.map_url }}">Map</a></td>
+                    <td><img src="{{ cafe.img_url }}" alt="{{ cafe.name }}" height="100"></td>
+                    <td>{{ cafe.location }}</td>
+                    <td>{{ cafe.has_sockets }}</td>
+                    <td>{{ cafe.has_toilet }}</td>
+                    <td>{{ cafe.has_wifi }}</td>
+                    <td>{{ cafe.can_take_calls }}</td>
+                    <td>{{ cafe.seats }}</td>
+                    <td>{{ cafe.coffee_price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+
+      <p><a href="{{ url_for('home') }}">Return to index page</a></p>
+
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
