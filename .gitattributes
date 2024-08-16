@@ -1,6 +1,7 @@
 *.py linguist-language=python
 *.ipynb linguist-language=python
 *.css linguist-vendored
+*.scss linguist-vendored
 *.html linguist-vendored
 *.txt linguist-language
 *.csv linguist-vendored
