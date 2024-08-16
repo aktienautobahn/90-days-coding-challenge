@@ -1,3 +1,14 @@
 *.py linguist-language=python
 *.ipynb linguist-language=python
 *.css linguist-vendored
+*.html linguist-vendored
+*.txt linguist-language
+*.csv linguist-vendored
+*.jpg linguist-vendored
+*.jpeg linguist-vendored
+*.toml linguist-vendored
+*.lock linguist-vendored
+*.ico linguist-vendored
+*.js linguist-vendored
+*.png linguist-vendored
+*.md linguist-vendored
